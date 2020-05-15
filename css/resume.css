@@ -174,3 +174,298 @@ a {
 a:hover, a:focus, a:active {
   color: #1f8170;
 }
+
+.box {
+  position: relative;
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.box .text {
+  padding: 10px 0 0;
+  color: #999;
+  font-weight: 700;
+}
+
+.box .percent {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.box .percent .number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #999;
+}
+
+.box .percent .number h2 {
+  font-size: 48px;
+}
+
+.box .percent .number h2 span {
+  font-size: 24px;
+}
+
+.box .percent .html {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.box .percent .html circle {
+  width: 150px;
+  height: 150px;
+  fill: none;
+  stroke-width: 10;
+  stroke: #000;
+  transform: translate(5px, 5px);
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  stroke-linecap: round;
+}
+
+.box .percent .html circle:nth-child(1) {
+  stroke-dashoffset: 0;
+  stroke: #f3f3f3;
+}
+
+.box .percent .html circle:nth-child(2) {
+  stroke-dashoffset: calc(440 - (440*77) / 100);
+  stroke: #2EBFA5;
+}
+
+.box .percent .css {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.box .percent .css circle {
+  width: 150px;
+  height: 150px;
+  fill: none;
+  stroke-width: 10;
+  stroke: #000;
+  transform: translate(5px, 5px);
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  stroke-linecap: round;
+}
+
+.box .percent .css circle:nth-child(1) {
+  stroke-dashoffset: 0;
+  stroke: #f3f3f3;
+}
+
+.box .percent .css circle:nth-child(2) {
+  stroke-dashoffset: calc(440 - (440*67) / 100);
+  stroke: #6f42c1;
+}
+
+.box .percent .js {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.box .percent .js circle {
+  width: 150px;
+  height: 150px;
+  fill: none;
+  stroke-width: 10;
+  stroke: #000;
+  transform: translate(5px, 5px);
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  stroke-linecap: round;
+}
+
+.box .percent .js circle:nth-child(1) {
+  stroke-dashoffset: 0;
+  stroke: #f3f3f3;
+}
+
+.box .percent .js circle:nth-child(2) {
+  stroke-dashoffset: calc(440 - (440*81) / 100);
+  stroke: #6f42c1;
+}
+
+.box .percent .angular {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.box .percent .angular circle {
+  width: 150px;
+  height: 150px;
+  fill: none;
+  stroke-width: 10;
+  stroke: #000;
+  transform: translate(5px, 5px);
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  stroke-linecap: round;
+}
+
+.box .percent .angular circle:nth-child(1) {
+  stroke-dashoffset: 0;
+  stroke: #f3f3f3;
+}
+
+.box .percent .angular circle:nth-child(2) {
+  stroke-dashoffset: calc(440 - (440*87) / 100);
+  stroke: #2EBFA5;
+}
+
+.box .percent .react {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.box .percent .react circle {
+  width: 150px;
+  height: 150px;
+  fill: none;
+  stroke-width: 10;
+  stroke: #000;
+  transform: translate(5px, 5px);
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  stroke-linecap: round;
+}
+
+.box .percent .react circle:nth-child(1) {
+  stroke-dashoffset: 0;
+  stroke: #f3f3f3;
+}
+
+.box .percent .react circle:nth-child(2) {
+  stroke-dashoffset: calc(440 - (440*61) / 100);
+  stroke: #2EBFA5;
+}
+
+.box .percent .laravel {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.box .percent .laravel circle {
+  width: 150px;
+  height: 150px;
+  fill: none;
+  stroke-width: 10;
+  stroke: #000;
+  transform: translate(5px, 5px);
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  stroke-linecap: round;
+}
+
+.box .percent .laravel circle:nth-child(1) {
+  stroke-dashoffset: 0;
+  stroke: #f3f3f3;
+}
+
+.box .percent .laravel circle:nth-child(2) {
+  stroke-dashoffset: calc(440 - (440*49) / 100);
+  stroke: #6f42c1;
+}
+
+.box .percent .php {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.box .percent .php circle {
+  width: 150px;
+  height: 150px;
+  fill: none;
+  stroke-width: 10;
+  stroke: #000;
+  transform: translate(5px, 5px);
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  stroke-linecap: round;
+}
+
+.box .percent .php circle:nth-child(1) {
+  stroke-dashoffset: 0;
+  stroke: #f3f3f3;
+}
+
+.box .percent .php circle:nth-child(2) {
+  stroke-dashoffset: calc(440 - (440*61) / 100);
+  stroke: #2EBFA5;
+}
+
+.box .percent .symfony {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.box .percent .symfony circle {
+  width: 150px;
+  height: 150px;
+  fill: none;
+  stroke-width: 10;
+  stroke: #000;
+  transform: translate(5px, 5px);
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  stroke-linecap: round;
+}
+
+.box .percent .symfony circle:nth-child(1) {
+  stroke-dashoffset: 0;
+  stroke: #f3f3f3;
+}
+
+.box .percent .symfony circle:nth-child(2) {
+  stroke-dashoffset: calc(440 - (440*69) / 100);
+  stroke: #6f42c1;
+}
+
+.box .percent .dotnet {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.box .percent .dotnet circle {
+  width: 150px;
+  height: 150px;
+  fill: none;
+  stroke-width: 10;
+  stroke: #000;
+  transform: translate(5px, 5px);
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  stroke-linecap: round;
+}
+
+.box .percent .dotnet circle:nth-child(1) {
+  stroke-dashoffset: 0;
+  stroke: #f3f3f3;
+}
+
+.box .percent .dotnet circle:nth-child(2) {
+  stroke-dashoffset: calc(440 - (440*90) / 100);
+  stroke: #6f42c1;
+}
