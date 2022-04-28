@@ -1,3 +1,43 @@
+@media (max-width: 420px) {
+  #skills {
+    * {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+
+      .legends {
+        svg {
+          display: none;
+        }
+      }
+    }
+    
+  }
+}
+
+@media (max-width: 475px) {
+  #skills {
+    * {
+      .legends {
+        display: inline-flex;
+        justify-content: start !important;
+        display: contents;
+      }
+    }
+  }
+}
+
+@media (max-width: 610px) {
+  #skills {
+    * {
+      .legends {
+        display: inline;
+      }
+    }
+  }
+}
+
 .bg-primary {
   background-color: $primary !important;
 }
@@ -14,6 +54,51 @@ a {
     color: darken($primary, 15%);
   }
 }
+
+.title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+
+  h2 {
+    margin-bottom: 0 !important;
+  }
+
+  .legend {
+    margin-left: 20px;
+    height: 20px;
+    width: 20px;  
+  }
+
+  h4 {
+    padding: 10px;
+  }
+}
+
+.basic {
+  circle {
+    fill: $primary;
+  }
+
+  color: $primary;
+}
+
+.exp {
+  circle {
+    fill: $purple;
+  }
+
+  color: $purple;
+}
+
+.master {
+  circle {
+    fill: $black;
+  }
+
+  color: black;
+}
+
 
 .box {
   position: relative;
@@ -67,7 +152,7 @@ a {
         fill: none;
         stroke-width: 10;
         stroke: #000;
-        transform: translate(5px, 5px);
+        transform: translate(5px,145px) rotate(-90deg);
         stroke-dasharray: 440;
         stroke-dashoffset: 440;
         stroke-linecap: round;
@@ -78,8 +163,13 @@ a {
         }
 
         &:nth-child(2) {
-          stroke-dashoffset: calc(440 - (440*77) / 100);
+          stroke-dashoffset: calc(440 - (440*100) / 100);
           stroke: $primary;
+        }
+
+        &:nth-child(3) {
+          stroke-dashoffset: 264;
+          stroke: $purple;
         }
       }
     }
@@ -95,7 +185,7 @@ a {
         fill: none;
         stroke-width: 10;
         stroke: #000;
-        transform: translate(5px, 5px);
+        transform: translate(5px,145px) rotate(-90deg);
         stroke-dasharray: 440;
         stroke-dashoffset: 440;
         stroke-linecap: round;
@@ -106,8 +196,8 @@ a {
         }
 
         &:nth-child(2) {
-          stroke-dashoffset: calc(440 - (440*67) / 100);
-          stroke: $purple;
+          stroke-dashoffset: 48.4;
+          stroke: $primary;
         }
       }
     }
@@ -123,7 +213,7 @@ a {
         fill: none;
         stroke-width: 10;
         stroke: #000;
-        transform: translate(5px, 5px);
+        transform: translate(5px,145px) rotate(-90deg);
         stroke-dasharray: 440;
         stroke-dashoffset: 440;
         stroke-linecap: round;
@@ -134,7 +224,12 @@ a {
         }
 
         &:nth-child(2) {
-          stroke-dashoffset: calc(440 - (440*81) / 100);
+          stroke-dashoffset: calc(440 - (440*100) / 100);
+          stroke: $primary;
+        }
+
+        &:nth-child(3) {
+          stroke-dashoffset: 264;
           stroke: $purple;
         }
       }
@@ -151,7 +246,7 @@ a {
         fill: none;
         stroke-width: 10;
         stroke: #000;
-        transform: translate(5px, 5px);
+        transform: translate(5px,145px) rotate(-90deg);
         stroke-dasharray: 440;
         stroke-dashoffset: 440;
         stroke-linecap: round;
@@ -162,8 +257,13 @@ a {
         }
 
         &:nth-child(2) {
-          stroke-dashoffset: calc(440 - (440*87) / 100);
+          stroke-dashoffset: calc(440 - (440*100) / 100);
           stroke: $primary;
+        }
+
+        &:nth-child(3) {
+          stroke-dashoffset: 202.4;
+          stroke: $purple;
         }
       }
     }
@@ -179,7 +279,7 @@ a {
         fill: none;
         stroke-width: 10;
         stroke: #000;
-        transform: translate(5px, 5px);
+        transform: translate(5px,145px) rotate(-90deg);
         stroke-dasharray: 440;
         stroke-dashoffset: 440;
         stroke-linecap: round;
@@ -190,7 +290,7 @@ a {
         }
 
         &:nth-child(2) {
-          stroke-dashoffset: calc(440 - (440*61) / 100);
+          stroke-dashoffset: 105.6;
           stroke: $primary;
         }
       }
@@ -207,7 +307,7 @@ a {
         fill: none;
         stroke-width: 10;
         stroke: #000;
-        transform: translate(5px, 5px);
+        transform: translate(5px,145px) rotate(-90deg);
         stroke-dasharray: 440;
         stroke-dashoffset: 440;
         stroke-linecap: round;
@@ -218,8 +318,8 @@ a {
         }
 
         &:nth-child(2) {
-          stroke-dashoffset: calc(440 - (440*49) / 100);
-          stroke: $purple;
+          stroke-dashoffset: 224.4;
+          stroke: $primary;
         }
       }
     }
@@ -235,7 +335,7 @@ a {
         fill: none;
         stroke-width: 10;
         stroke: #000;
-        transform: translate(5px, 5px);
+        transform: translate(5px,145px) rotate(-90deg);
         stroke-dasharray: 440;
         stroke-dashoffset: 440;
         stroke-linecap: round;
@@ -246,7 +346,35 @@ a {
         }
 
         &:nth-child(2) {
-          stroke-dashoffset: calc(440 - (440*61) / 100);
+          stroke-dashoffset: 171.6; //61%
+          stroke: $primary;
+        }
+      }
+    }
+
+    .nodejs {
+      position: relative;
+      width: 150px;
+      height: 150px;
+
+      circle {
+        width: 150px;
+        height: 150px;
+        fill: none;
+        stroke-width: 10;
+        stroke: #000;
+        transform: translate(5px,145px) rotate(-90deg);
+        stroke-dasharray: 440;
+        stroke-dashoffset: 440;
+        stroke-linecap: round;
+
+        &:nth-child(1) {
+          stroke-dashoffset: 0;
+          stroke: #f3f3f3;
+        }
+
+        &:nth-child(2) {
+          stroke-dashoffset: 105.6; //76%
           stroke: $primary;
         }
       }
@@ -263,7 +391,7 @@ a {
         fill: none;
         stroke-width: 10;
         stroke: #000;
-        transform: translate(5px, 5px);
+        transform: translate(5px,145px) rotate(-90deg);
         stroke-dasharray: 440;
         stroke-dashoffset: 440;
         stroke-linecap: round;
@@ -274,7 +402,12 @@ a {
         }
 
         &:nth-child(2) {
-          stroke-dashoffset: calc(440 - (440*69) / 100);
+          stroke-dashoffset: calc(440 - (440*100) / 100);
+          stroke: $primary;
+        }
+
+        &:nth-child(3) {
+          stroke-dashoffset: 396; //10%
           stroke: $purple;
         }
       }
@@ -291,7 +424,7 @@ a {
         fill: none;
         stroke-width: 10;
         stroke: #000;
-        transform: translate(5px, 5px);
+        transform: translate(5px,145px) rotate(-90deg);
         stroke-dasharray: 440;
         stroke-dashoffset: 440;
         stroke-linecap: round;
@@ -302,7 +435,12 @@ a {
         }
 
         &:nth-child(2) {
-          stroke-dashoffset: calc(440 - (440*90) / 100);
+          stroke-dashoffset: calc(440 - (440*100) / 100);
+          stroke: $primary;
+        }
+
+        &:nth-child(3) {
+          stroke-dashoffset: 171.6; //61%
           stroke: $purple;
         }
       }
