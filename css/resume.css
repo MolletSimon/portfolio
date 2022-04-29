@@ -1,7 +1,7 @@
 /*!
  * Start Bootstrap - Resume v5.0.8 (https://startbootstrap.com/template-overviews/resume)
  * Copyright 2013-2022 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
+ * Licensed under MIT (https://github.com/BlackrockDigital/mollet-resume/blob/master/LICENSE)
  */
 
 body {
@@ -213,10 +213,10 @@ a:hover, a:focus, a:active {
 }
 
 .exp {
-  color: #6f42c1;
+  color: #BE6E46;
 }
 .exp circle {
-  fill: #6f42c1;
+  fill: #BE6E46;
 }
 
 .master {
@@ -289,7 +289,7 @@ a:hover, a:focus, a:active {
 }
 .box .percent .html circle:nth-child(3) {
   stroke-dashoffset: 264;
-  stroke: #6f42c1;
+  stroke: #BE6E46;
 }
 .box .percent .css {
   position: relative;
@@ -341,7 +341,7 @@ a:hover, a:focus, a:active {
 }
 .box .percent .js circle:nth-child(3) {
   stroke-dashoffset: 264;
-  stroke: #6f42c1;
+  stroke: #BE6E46;
 }
 .box .percent .angular {
   position: relative;
@@ -369,7 +369,7 @@ a:hover, a:focus, a:active {
 }
 .box .percent .angular circle:nth-child(3) {
   stroke-dashoffset: 202.4;
-  stroke: #6f42c1;
+  stroke: #BE6E46;
 }
 .box .percent .react {
   position: relative;
@@ -493,7 +493,7 @@ a:hover, a:focus, a:active {
 }
 .box .percent .symfony circle:nth-child(3) {
   stroke-dashoffset: 396;
-  stroke: #6f42c1;
+  stroke: #BE6E46;
 }
 .box .percent .dotnet {
   position: relative;
@@ -521,5 +521,5 @@ a:hover, a:focus, a:active {
 }
 .box .percent .dotnet circle:nth-child(3) {
   stroke-dashoffset: 171.6;
-  stroke: #6f42c1;
+  stroke: #BE6E46;
 }

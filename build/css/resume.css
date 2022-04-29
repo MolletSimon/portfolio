@@ -1,11 +1,11 @@
 /*!
  * Start Bootstrap - Resume v5.0.8 (https://startbootstrap.com/template-overviews/resume)
- * Copyright 2013-2020 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
+ * Copyright 2013-2022 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/mollet-resume/blob/master/LICENSE)
  */
 
 body {
-  font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   padding-top: 54px;
   color: #868e96;
 }
@@ -16,14 +16,13 @@ body {
     padding-left: 17rem;
   }
 }
-
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   text-transform: uppercase;
   color: #343a40;
@@ -50,7 +49,7 @@ p.lead {
 .subheading {
   text-transform: uppercase;
   font-weight: 500;
-  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1.5rem;
 }
 
@@ -66,21 +65,18 @@ p.lead {
   line-height: 3.5rem;
   margin-right: 1rem;
 }
-
 .social-icons a:last-child {
   margin-right: 0;
 }
-
 .social-icons a:hover {
-  background-color: #2EBFA5;
+  background-color: #1B998B;
 }
 
 .dev-icons {
   font-size: 3rem;
 }
-
 .dev-icons .list-inline-item i:hover {
-  color: #2EBFA5;
+  color: #1B998B;
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
@@ -88,9 +84,8 @@ p.lead {
   letter-spacing: 0.05rem;
   text-transform: uppercase;
 }
-
 #sideNav .navbar-toggler:focus {
-  outline-color: #61d9c3;
+  outline-color: #28d9c5;
 }
 
 @media (min-width: 992px) {
@@ -132,13 +127,11 @@ p.lead {
     display: block;
   }
 }
-
 section.resume-section {
   padding-top: 5rem !important;
   padding-bottom: 5rem !important;
   max-width: 75rem;
 }
-
 section.resume-section .resume-item .resume-date {
   min-width: none;
 }
@@ -151,28 +144,86 @@ section.resume-section .resume-item .resume-date {
     min-width: 18rem;
   }
 }
-
 @media (min-width: 992px) {
   section.resume-section {
     padding-top: 3rem !important;
     padding-bottom: 3rem !important;
   }
 }
-
+@media (max-width: 420px) {
+  #skills * {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  #skills * .legends svg {
+    display: none;
+  }
+}
+@media (max-width: 475px) {
+  #skills * .legends {
+    display: inline-flex;
+    justify-content: start !important;
+    display: contents;
+  }
+}
+@media (max-width: 610px) {
+  #skills * .legends {
+    display: inline;
+  }
+}
 .bg-primary {
-  background-color: #2EBFA5 !important;
+  background-color: #1B998B !important;
 }
 
 .text-primary {
-  color: #2EBFA5 !important;
+  color: #1B998B !important;
 }
 
 a {
-  color: #2EBFA5;
+  color: #1B998B;
+}
+a:hover, a:focus, a:active {
+  color: #105850;
 }
 
-a:hover, a:focus, a:active {
-  color: #1f8170;
+.title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.title h2 {
+  margin-bottom: 0 !important;
+}
+.title .legend {
+  margin-left: 20px;
+  height: 20px;
+  width: 20px;
+}
+.title h4 {
+  padding: 10px;
+}
+
+.basic {
+  color: #1B998B;
+}
+.basic circle {
+  fill: #1B998B;
+}
+
+.exp {
+  color: #BE6E46;
+}
+.exp circle {
+  fill: #BE6E46;
+}
+
+.master {
+  color: black;
+}
+.master circle {
+  fill: #000;
 }
 
 .box {
@@ -185,19 +236,16 @@ a:hover, a:focus, a:active {
   flex-direction: column;
   padding: 10px;
 }
-
 .box .text {
   padding: 10px 0 0;
   color: #999;
   font-weight: 700;
 }
-
 .box .percent {
   position: relative;
   width: 150px;
   height: 150px;
 }
-
 .box .percent .number {
   position: absolute;
   top: 0;
@@ -209,263 +257,269 @@ a:hover, a:focus, a:active {
   align-items: center;
   color: #999;
 }
-
 .box .percent .number h2 {
   font-size: 48px;
 }
-
 .box .percent .number h2 span {
   font-size: 24px;
 }
-
 .box .percent .html {
   position: relative;
   width: 150px;
   height: 150px;
 }
-
 .box .percent .html circle {
   width: 150px;
   height: 150px;
   fill: none;
   stroke-width: 10;
   stroke: #000;
-  transform: translate(5px, 5px);
+  transform: translate(5px, 145px) rotate(-90deg);
   stroke-dasharray: 440;
   stroke-dashoffset: 440;
   stroke-linecap: round;
 }
-
 .box .percent .html circle:nth-child(1) {
   stroke-dashoffset: 0;
   stroke: #f3f3f3;
 }
-
 .box .percent .html circle:nth-child(2) {
-  stroke-dashoffset: calc(440 - (440*77) / 100);
-  stroke: #2EBFA5;
+  stroke-dashoffset: 0;
+  stroke: #1B998B;
 }
-
+.box .percent .html circle:nth-child(3) {
+  stroke-dashoffset: 264;
+  stroke: #BE6E46;
+}
 .box .percent .css {
   position: relative;
   width: 150px;
   height: 150px;
 }
-
 .box .percent .css circle {
   width: 150px;
   height: 150px;
   fill: none;
   stroke-width: 10;
   stroke: #000;
-  transform: translate(5px, 5px);
+  transform: translate(5px, 145px) rotate(-90deg);
   stroke-dasharray: 440;
   stroke-dashoffset: 440;
   stroke-linecap: round;
 }
-
 .box .percent .css circle:nth-child(1) {
   stroke-dashoffset: 0;
   stroke: #f3f3f3;
 }
-
 .box .percent .css circle:nth-child(2) {
-  stroke-dashoffset: calc(440 - (440*67) / 100);
-  stroke: #6f42c1;
+  stroke-dashoffset: 48.4;
+  stroke: #1B998B;
 }
-
 .box .percent .js {
   position: relative;
   width: 150px;
   height: 150px;
 }
-
 .box .percent .js circle {
   width: 150px;
   height: 150px;
   fill: none;
   stroke-width: 10;
   stroke: #000;
-  transform: translate(5px, 5px);
+  transform: translate(5px, 145px) rotate(-90deg);
   stroke-dasharray: 440;
   stroke-dashoffset: 440;
   stroke-linecap: round;
 }
-
 .box .percent .js circle:nth-child(1) {
   stroke-dashoffset: 0;
   stroke: #f3f3f3;
 }
-
 .box .percent .js circle:nth-child(2) {
-  stroke-dashoffset: calc(440 - (440*81) / 100);
-  stroke: #6f42c1;
+  stroke-dashoffset: 0;
+  stroke: #1B998B;
 }
-
+.box .percent .js circle:nth-child(3) {
+  stroke-dashoffset: 264;
+  stroke: #BE6E46;
+}
 .box .percent .angular {
   position: relative;
   width: 150px;
   height: 150px;
 }
-
 .box .percent .angular circle {
   width: 150px;
   height: 150px;
   fill: none;
   stroke-width: 10;
   stroke: #000;
-  transform: translate(5px, 5px);
+  transform: translate(5px, 145px) rotate(-90deg);
   stroke-dasharray: 440;
   stroke-dashoffset: 440;
   stroke-linecap: round;
 }
-
 .box .percent .angular circle:nth-child(1) {
   stroke-dashoffset: 0;
   stroke: #f3f3f3;
 }
-
 .box .percent .angular circle:nth-child(2) {
-  stroke-dashoffset: calc(440 - (440*87) / 100);
-  stroke: #2EBFA5;
+  stroke-dashoffset: 0;
+  stroke: #1B998B;
 }
-
+.box .percent .angular circle:nth-child(3) {
+  stroke-dashoffset: 202.4;
+  stroke: #BE6E46;
+}
 .box .percent .react {
   position: relative;
   width: 150px;
   height: 150px;
 }
-
 .box .percent .react circle {
   width: 150px;
   height: 150px;
   fill: none;
   stroke-width: 10;
   stroke: #000;
-  transform: translate(5px, 5px);
+  transform: translate(5px, 145px) rotate(-90deg);
   stroke-dasharray: 440;
   stroke-dashoffset: 440;
   stroke-linecap: round;
 }
-
 .box .percent .react circle:nth-child(1) {
   stroke-dashoffset: 0;
   stroke: #f3f3f3;
 }
-
 .box .percent .react circle:nth-child(2) {
-  stroke-dashoffset: calc(440 - (440*61) / 100);
-  stroke: #2EBFA5;
+  stroke-dashoffset: 105.6;
+  stroke: #1B998B;
 }
-
 .box .percent .laravel {
   position: relative;
   width: 150px;
   height: 150px;
 }
-
 .box .percent .laravel circle {
   width: 150px;
   height: 150px;
   fill: none;
   stroke-width: 10;
   stroke: #000;
-  transform: translate(5px, 5px);
+  transform: translate(5px, 145px) rotate(-90deg);
   stroke-dasharray: 440;
   stroke-dashoffset: 440;
   stroke-linecap: round;
 }
-
 .box .percent .laravel circle:nth-child(1) {
   stroke-dashoffset: 0;
   stroke: #f3f3f3;
 }
-
 .box .percent .laravel circle:nth-child(2) {
-  stroke-dashoffset: calc(440 - (440*49) / 100);
-  stroke: #6f42c1;
+  stroke-dashoffset: 224.4;
+  stroke: #1B998B;
 }
-
 .box .percent .php {
   position: relative;
   width: 150px;
   height: 150px;
 }
-
 .box .percent .php circle {
   width: 150px;
   height: 150px;
   fill: none;
   stroke-width: 10;
   stroke: #000;
-  transform: translate(5px, 5px);
+  transform: translate(5px, 145px) rotate(-90deg);
   stroke-dasharray: 440;
   stroke-dashoffset: 440;
   stroke-linecap: round;
 }
-
 .box .percent .php circle:nth-child(1) {
   stroke-dashoffset: 0;
   stroke: #f3f3f3;
 }
-
 .box .percent .php circle:nth-child(2) {
-  stroke-dashoffset: calc(440 - (440*61) / 100);
-  stroke: #2EBFA5;
+  stroke-dashoffset: 171.6;
+  stroke: #1B998B;
 }
-
+.box .percent .nodejs {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+.box .percent .nodejs circle {
+  width: 150px;
+  height: 150px;
+  fill: none;
+  stroke-width: 10;
+  stroke: #000;
+  transform: translate(5px, 145px) rotate(-90deg);
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  stroke-linecap: round;
+}
+.box .percent .nodejs circle:nth-child(1) {
+  stroke-dashoffset: 0;
+  stroke: #f3f3f3;
+}
+.box .percent .nodejs circle:nth-child(2) {
+  stroke-dashoffset: 105.6;
+  stroke: #1B998B;
+}
 .box .percent .symfony {
   position: relative;
   width: 150px;
   height: 150px;
 }
-
 .box .percent .symfony circle {
   width: 150px;
   height: 150px;
   fill: none;
   stroke-width: 10;
   stroke: #000;
-  transform: translate(5px, 5px);
+  transform: translate(5px, 145px) rotate(-90deg);
   stroke-dasharray: 440;
   stroke-dashoffset: 440;
   stroke-linecap: round;
 }
-
 .box .percent .symfony circle:nth-child(1) {
   stroke-dashoffset: 0;
   stroke: #f3f3f3;
 }
-
 .box .percent .symfony circle:nth-child(2) {
-  stroke-dashoffset: calc(440 - (440*69) / 100);
-  stroke: #6f42c1;
+  stroke-dashoffset: 0;
+  stroke: #1B998B;
 }
-
+.box .percent .symfony circle:nth-child(3) {
+  stroke-dashoffset: 396;
+  stroke: #BE6E46;
+}
 .box .percent .dotnet {
   position: relative;
   width: 150px;
   height: 150px;
 }
-
 .box .percent .dotnet circle {
   width: 150px;
   height: 150px;
   fill: none;
   stroke-width: 10;
   stroke: #000;
-  transform: translate(5px, 5px);
+  transform: translate(5px, 145px) rotate(-90deg);
   stroke-dasharray: 440;
   stroke-dashoffset: 440;
   stroke-linecap: round;
 }
-
 .box .percent .dotnet circle:nth-child(1) {
   stroke-dashoffset: 0;
   stroke: #f3f3f3;
 }
-
 .box .percent .dotnet circle:nth-child(2) {
-  stroke-dashoffset: calc(440 - (440*90) / 100);
-  stroke: #6f42c1;
+  stroke-dashoffset: 0;
+  stroke: #1B998B;
+}
+.box .percent .dotnet circle:nth-child(3) {
+  stroke-dashoffset: 171.6;
+  stroke: #BE6E46;
 }

@@ -1,11 +1,11 @@
 {
     "title": "Resume",
-    "name": "startbootstrap-resume",
+    "name": "mollet-resume",
     "version": "5.0.8",
     "scripts": {
         "start": "node_modules/.bin/gulp watch"
     },
-    "description": "Resume is a simple, yet elegant resume and CV theme for Bootstrap 4.",
+    "description": "",
     "keywords": [
         "css",
         "sass",
